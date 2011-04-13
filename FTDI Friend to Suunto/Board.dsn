@@ -1,0 +1,144 @@
+(PCB "/Users/duncanmurdock/Documents/eagle/FTDI Friend to Suunto/untitled.brd"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad CadSoft)
+    (host_version 'EAGLE Version 5.11.0 Copyright (c) 1988-2010 CadSoft')
+  )
+  (resolution inch 254000)
+  (unit inch)
+  (structure
+    (layer "1#Top"  (type signal))
+    (layer "16#Bottom"  (type signal))
+    (boundary 
+      (rect pcb  0.000000 0.000000 1.587008 0.749606)
+    )
+    (boundary (path signal 0 0.000000 0.000000 1.587008 0.000000))
+    (boundary (path signal 0 1.587008 0.000000 1.587008 0.749606))
+    (boundary (path signal 0 1.587008 0.749606 0.000000 0.749606))
+    (boundary (path signal 0 0.000000 0.749606 0.000000 0.000000))
+    (via
+       "Round1$0.024000"
+    )
+    (rule (width 0.010000)(clearance 0.008000))
+    (control
+      (via_at_smd on)
+    )
+  )
+  (placement
+    (place_control (flip_style rotate_first))
+    (component "1X06_LOCK_LONGPADS$SparkFun" 
+      (place "JP1" 0.150000 0.600000 Front 270.000000)
+    )
+    (component "1X02_LONGPADS$SparkFun" 
+      (place "JP2" 1.400000 0.500000 Front 270.000000)
+    )
+    (component "TO92-EBC$transistor-npn" 
+      (place "Q1" 1.000000 0.150000 Front 270.000000)
+    )
+    (component "AXIAL-0.3$SparkFun" 
+      (place "R1" 0.550000 0.600000 Front 0.000000)
+    )
+    (component "AXIAL-0.3$SparkFun" 
+      (place "R2" 0.550000 0.100000 Front 180.000000)
+    )
+    (component "AXIAL-0.3$SparkFun" 
+      (place "R3" 0.550000 0.400000 Front 0.000000)
+    )
+    (component "AXIAL-0.3$SparkFun" 
+      (place "R4" 1.050000 0.600000 Front 180.000000)
+    )
+    (component "AXIAL-0.3$SparkFun" 
+      (place "R5" 1.050000 0.400000 Front 180.000000)
+    )
+    (component "TO92-EBC$transistor-pnp" 
+      (place "V2" 1.400000 0.150000 Front 270.000000)
+    )
+  )
+  (library
+    (image "1X02_LONGPADS$SparkFun"
+      (pin "Oblong1" "1" 0.000000 0.000000)
+      (pin "Oblong1" "2" 0.100000 0.000000)
+    )
+    (image "1X06_LOCK_LONGPADS$SparkFun"
+      (pin "Oblong2" "1" 0.000000 0.000000)
+      (pin "Oblong2" "2" 0.100000 -0.010000)
+      (pin "Oblong2" "3" 0.200000 0.000000)
+      (pin "Oblong2" "4" 0.300000 -0.010000)
+      (pin "Oblong2" "5" 0.400000 0.000000)
+      (pin "Oblong2" "6" 0.500000 -0.010000)
+    )
+    (image "AXIAL-0.3$SparkFun"
+      (pin "Round2" "P$1" -0.150000 0.000000)
+      (pin "Round2" "P$2" 0.150000 0.000000)
+    )
+    (image "TO92-EBC$transistor-npn"
+      (pin "Oblong3" "B" 0.000000 -0.050000)
+      (pin "Oblong3" "C" -0.100000 -0.050000)
+      (pin "Oblong3" "E" 0.100000 -0.050000)
+    )
+    (image "TO92-EBC$transistor-pnp"
+      (pin "Oblong3" "B" 0.000000 -0.050000)
+      (pin "Oblong3" "C" -0.100000 -0.050000)
+      (pin "Oblong3" "E" 0.100000 -0.050000)
+    )
+    (padstack "ViaDefault$0.024000"
+      (shape (circle signal 0.040000 0 0))
+    )
+    (padstack "Round1$0.024000" 
+      (shape (circle "1#Top" 0.040000 0 0))
+      (shape (circle "16#Bottom" 0.040000 0 0))
+      (attach off)
+    )
+    (padstack "Oblong1" 
+      (shape (path signal 0.074000 0.000000 -0.037000 0.000000 0.037000))
+      (attach off)
+    )
+    (padstack "Oblong2" 
+      (shape (path signal 0.060000 0.000000 -0.030000 0.000000 0.030000))
+      (attach off)
+    )
+    (padstack "Round2" 
+      (shape (circle signal 0.074000 0 0))
+      (attach off)
+    )
+    (padstack "Oblong3" 
+      (shape (path signal 0.052000 0.000000 -0.026000 0.000000 0.026000))
+      (attach off)
+    )
+  )
+  (network
+    (net "GND"
+      (pins  "JP1"-"6" "R2"-"P$2")
+    )
+    (net "N$1"
+      (pins  "JP1"-"1" "R1"-"P$1")
+    )
+    (net "N$2"
+      (pins  "V2"-"B" "R1"-"P$2")
+    )
+    (net "N$3"
+      (pins  "R5"-"P$1" "Q1"-"B")
+    )
+    (net "N$4"
+      (pins  "R4"-"P$2" "V2"-"E" "Q1"-"C")
+    )
+    (net "N$5"
+      (pins  "R4"-"P$1" "JP2"-"1")
+    )
+    (net "N$6"
+      (pins  "JP1"-"2" "R2"-"P$1" "V2"-"C" "Q1"-"E")
+    )
+    (net "N$8"
+      (pins  "JP1"-"3" "R3"-"P$1")
+    )
+    (net "N$9"
+      (pins  "R3"-"P$2" "JP2"-"2" "R5"-"P$2")
+    )
+    (net "VCC"
+      (pins  "JP1"-"4")
+    )
+  )
+  (wiring
+  )
+)
