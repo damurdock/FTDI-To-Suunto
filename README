@@ -1,0 +1,10 @@
+**THIS DESIGN IS CURRENTLY UNTESTED AND MAY CAUSE DAMAGE TO YOUR DIVE COMPUTER. DO NOT USE THIS SCHEMATIC UNTIL FURTHER NOTICE**
+ *THIS DESIGN IS PROVIDED WITH ABSOLUTELY NO WARRANTY OR GUARANTEE OF FITNESS FOR ANY PURPOSE, INCLUDING THE PURPOSE IT WAS DESIGNED FOR*
+ 
+ Now that that's out of the way…
+ 
+ Readme:
+ 
+ This project is an FTDI to Suunto Dive Computer adaptor based off of Roli Wasmer's USB-based design (found here: http://homepage.hispeed.ch/scubadiver/). I made it because I wanted to download dive computer data from my Suunto Cobra dive computer, but my official adaptor was broken. Replacements are almost $100 US. I modified the schematic  because I already owned several FTDI USB to TTL adaptors, and that makes up half of the design, so I figured that I could save money by cutting out the FTDI chip and breaking out the connectors to a header. 
+ 
+ Legal note: Right now, I'm shopping around for a license to put this under. Until then, please don't modify my designs. I promise the final designs will be open hardware of some type.
