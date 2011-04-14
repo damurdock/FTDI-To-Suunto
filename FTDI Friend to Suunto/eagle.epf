@@ -306,6 +306,7 @@ UsedLibrary="/Applications/EAGLE/lbr/xicor.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/xilinx-xcv.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zetex.lbr"
 UsedLibrary="/Applications/EAGLE/lbr/zilog.lbr"
+UsedLibrary="/Users/duncanmurdock/Documents/Git Repos/NBITWONDER-Eagle-Lib/NBitWonder.lbr"
 
 [Win_1]
 Type="Control Panel"
